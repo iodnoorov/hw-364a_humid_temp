@@ -55,6 +55,5 @@ dkms.conf
 *.dwo
 
 .pio
-include/secrets.h
-
 .vscode
+include/secrets.h
