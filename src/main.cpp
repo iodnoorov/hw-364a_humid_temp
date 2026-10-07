@@ -159,12 +159,11 @@ void drawScreen() {
 
 float round1(float v) { return roundf(v * 10.0f) / 10.0f; }
 
-// Словесная оценка уровня сигнала
 const char* rssiWord(int32_t rssi) {
-  if (rssi > -50)  return "High";      // > -50
-  if (rssi > -60)  return "Good";      // [-50 .. -60)
-  if (rssi >= -70) return "Moderate";  // [-60 .. -70]
-  return "Poor";                       // < -70
+  if (rssi > -50)  return "High";      
+  if (rssi > -60)  return "Good";      
+  if (rssi >= -70) return "Moderate";  
+  return "Poor";                       
 }
 
 void handleStatus() {
